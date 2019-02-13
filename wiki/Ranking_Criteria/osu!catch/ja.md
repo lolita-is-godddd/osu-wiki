@@ -10,57 +10,64 @@ These terms are frequently appearing when getting in touch with osu!catch diffic
 
 ### <!-- Difficulty Names --> 難易度の名称
 
-- ![Easy icon](/wiki/shared/diff/easy-c.png "Easy icon") **Cup**. 簡単
-- ![Normal icon](/wiki/shared/diff/normal-c.png "Normal icon") **Salad**. 普通
-- ![Hard icon](/wiki/shared/diff/hard-c.png "Hard icon") **Platter**. 難しい
-- ![Insane icon](/wiki/shared/diff/insane-c.png "Insane icon") **Rain**. めちゃめちゃ
-- ![Expert icon](/wiki/shared/diff/expert-c.png "Expert icon") **Overdose**. 達人
+- ![Easy icon](/wiki/shared/diff/easy-c.png "Easy icon") **Cup**: 簡単
+- ![Normal icon](/wiki/shared/diff/normal-c.png "Normal icon") **Salad**: 普通
+- ![Hard icon](/wiki/shared/diff/hard-c.png "Hard icon") **Platter**: 難しい
+- ![Insane icon](/wiki/shared/diff/insane-c.png "Insane icon") **Rain**: めちゃめちゃ
+- ![Expert icon](/wiki/shared/diff/expert-c.png "Expert icon") **Overdose**: 達人
 
-### Gameplay
+### <!-- Gameplay --> 用語
 
-- **Fruit:** A large object represented by a hitcircle, slider head, tail or repeat.
-- **Drop:** A medium-sized object represented by a slider tick.
-- **Droplet:** A small object representing a slider body. Missing these will reduce your accuracy, but unlike the above, will not result in a combo break.
-- **Banana:** An object found during spinners. These award bonus points, but do not contribute to accuracy and are not required to obtain max combo.
-- **Jump:** A spacing between two objects that requires the use of dash to catch both.
-- **Hyperjump:** A more exaggerated spacing which cannot be caught by normal dashing. During play, hyperdash will be triggered between the two objects, characterised by a coloured outline on the first object.
-- **Edge Dash:** A very large spacing between two objects where the required Trigger Distance is not reached, and as such, a hyperjump is not generated. The first object must be caught with the edge of the plate in order to catch the second object at all.
-- **Trigger distance:** The minimum spacing between two objects at which a hyperdash is generated between them.
-- **Antiflow:** A strong direction or velocity change that goes against a player's natural movement pattern.
-- **Basic dash/hyperdash:** Any dash or hyperdash whose time between fruits is at least twice the time required to allow dashes or hyperdashes, respectively. As an example, a hyperdash between objects separated by 250 ms in a Platter classifies as a basic hyperdash.
-- **Higher snapped dash/hyperdash:** Any dash or hyperdash that doesn’t meet the requirement to be a basic one, i.e. the time between the objects is less than the threshold to be classified as basic.
-- **Walk:** Any distance between two objects where no dash is needed to catch both.
+- **Fruit:** 大きいもので、サークルとスライダーの開始、終点に対応する。<!-- A large object represented by a hitcircle, slider head, tail or repeat. -->
+- **Drop:** 中くらいのもので、スライダーのティックに対応する。<!-- A medium-sized object represented by a slider tick. -->
+- **Droplet:** 小さいものでスライダーの開始、終点、ティック以外に対応する。これを取ることができないと精度は減るが、上の2つと違いコンボが切れることはない。<!-- A small object representing a slider body. Missing these will reduce your accuracy, but unlike the above, will not result in a combo break. -->
+- **Banana:** スピナーに対応する。これらを取るとボーナススコアがもらえるが、スコアや精度に影響しない。<!-- An object found during spinners. These award bonus points, but do not contribute to accuracy and are not required to obtain max combo. -->
+- **Jump:** ダッシュを使わないと取れない距離にある2つのもののこと。<!-- A spacing between two objects that requires the use of dash to catch both. -->
+- **Hyperjump:** もっと間が空いた普通のダッシュでは取れない距離にある2つのもののこと。プレイ中は、ハイパーダッシュは(2つのものの内、)外枠に色がついた1つ目のものを取ることで発動する。<!-- A more exaggerated spacing which cannot be caught by normal dashing. During play, hyperdash will be triggered between the two objects, characterised by a coloured outline on the first object. -->
+- **Edge Dash:** とても間が空いているがHyperjumpが生成されない距離。(具体的には、)1つ目のものを皿の端で取らないと2つ目のものが絶対に取れない配置のこと。<!-- A very large spacing between two objects where the required Trigger Distance is not reached, and as such, a hyperjump is not generated. The first object must be caught with the edge of the plate in order to catch the second object at all. -->
+- **Trigger distance:** Hyperdashが2つのもので生成される最小の距離。<!-- The minimum spacing between two objects at which a hyperdash is generated between them. -->
+- **Antiflow:** プレイヤーの自然な動きのパターンから大きく逸脱させる動きや方向。<!-- A strong direction or velocity change that goes against a player's natural movement pattern. -->
+- **Basic dash/hyperdash:** DashやHyperdashは難易度毎に定められた間隔を置かなければならない。例として、Platterでは2つのものの間に250ms (訳注: 0.25秒)の間を開けなければならない。<!-- Any dash or hyperdash whose time between fruits is at least twice the time required to allow dashes or hyperdashes, respectively. As an example, a hyperdash between objects separated by 250 ms in a Platter classifies as a basic hyperdash. -->
+- **Higher snapped dash/hyperdash:** 難易度毎に定められた間隔が置かれていないDashやHyperdash。例として、難易度毎に定められた間隔よりも短い間隔のダッシュ。<!-- Any dash or hyperdash that doesn’t meet the requirement to be a basic one, i.e. the time between the objects is less than the threshold to be classified as basic. -->
+- **Walk:** Dashを使わないで取ることのできる2つのもの。<!-- Any distance between two objects where no dash is needed to catch both. -->
 
 ------------------------------------------------------------------------
 
-Overall
+<!-- Overall --> 共通
 -----------
 
-Overall rules and guidelines apply to every kind of osu!catch difficulty.
+<!-- Overall rules and guidelines apply to every kind of osu!catch difficulty. -->
+これらのルールは、すべてのosu!catchの難易度に適用される。
 
 ### General
 
-#### Rules
+#### ルール
 
+- **理論的にはSSを取得することができなければいけない。** つまり、すべてのFruitとDropletを取れなければいけない。
+- **Edge dashはhyperjumpsと一緒に使ってはいけない。** そのようなパターンは特に正確な動きを必要とし、捕らえるために必要とされる正確さに対する不当な制限を強いるからである。
+- **すべての譜面は2つ以上の背景・ストーリーボード・動画と同化しないコンボカラーを使わなければならない。** 常にプレイヤーにオブジェクトが見えるようにするためである。
+- **キーサウンドをcatchする手助け以外に使わない。** サウンドが完全に歌と同化しているなら、オブジェクトを拾う手助けはあまり意味をなさない。
+
+<!--
 - **Your map must theoretically be possible to SS.** This means it must be possible to catch absolutely all fruits, including droplets.
 - **Edge dashes must not be used in direct conjunction with hyperjumps.** This is because such patterns require especially precise movement and force an unreasonable restriction on accuracy required to catch them.
 - **Each map must use at least two different combo colours which must not blend in with the map's background/storyboard/video.** This is so hit objects are always visible to the player.
 - **Do not use keysounds without hitnormal support.** If sounds blend perfectly with the song, feedback for hitting notes is minimal.
-
-#### Guidelines
+-->
+<!-- #### Guidelines --> #### ガイドライン
 
 - <!-- **Ensure combos do not reach unreasonable lengths.** --> **意味もなく長いコンボを作らないこと。** Caught fruits will stack up on the plate and can potentially obstruct the player's view. Bear in mind that slider tails, repeats and spinner bananas also count as "fruits". New Combos should be placed regularly to clear the plate and avoid this.
-- <!-- **Try to have at least one spinner in each difficulty to create variety in the map and fluctuation among scores.** --> **スコアに差をつけるため、最低一つはスピナーを入れることを試す。** <!-- However, if a spinner just doesn't fit anywhere in the song, then there's no need to force one. --> しかし、どこにも収まらない場合は入れる必要がない。
+- <!-- **Try to have at least one spinner in each difficulty to create variety in the map and fluctuation among scores.** --> **スコアに差をつけるため、最低一つはスピナーを入れることを試す。** <!-- However, if a spinner just doesn't fit anywhere in the song, then there's no need to force one. --> しかし、曲のどこにも収まらない場合は入れる必要がない。
 - <!-- **Overall Difficulty should have the same value as the Approach Rate.** --> Overall Diffculty (OD)はApproach Rate (AR)と同じにすることが望ましい。This is just a standardized value, as Overall Difficulty does not affect gameplay nor the amount of fruits a spinner has, just the maximum score of a difficulty. For cases where the two values are not equal, the Overall Difficulty must be less than or equal to the Overall Difficulty of the next hardest difficulty.
 - **Use the same slider tick rate on every difficulty** as it is a property of the music rather than the mapping. However, lower difficulties may use lower tick rates to reduce accuracy requirements for newer players, providing they still follow the rhythm of the song. Using high tick rates purely to increase score/combo/difficulty is senseless.
 - **Dashes and hyperdashes should not be used when the destination of the hyperjump is located near the left or right border of the play field.** This creates an uncomfortable movement as the catcher is forcibly stopped upon reaching the border of the playfield. Try to leave at least 16 osupixels of space between the end point of the hyperjump and the border of the play field, respectively at x:16 or x:496 at most.
 - **Sliderends of extended sliders should be snapped according to the song's beat structure.** If the song is using a straight beat, 1/4, 1/8, and 1/16 should be used. If the song is using a swing beat, 1/6 or 1/12 should be used. If the song has a sound in a different snap from what was recommended, snapping to an actual beat always takes priority.
 - **Slider tick rate should be set according to the song.** For example if your song only uses 1/3 snapping, using tick rate 2 or 4 would not be fitting.
-- <!-- **Avoid using combo colours with ~50 luminosity or lower.** --> **明度が50以下のコンボカラーは使わない。** Dark colours impact readability of fruits with low background dim.
-- <!-- **Avoid using combo colours with ~220 luminosity or higher.** --> **明度が220異常のコンボカラーは使わない。** They create bright pulses during Kiai time which can be unpleasant to the eyes.
+- <!-- **Avoid using combo colours with ~50 luminosity or lower.** --> **明度が50以下のコンボカラーは使わない。** 暗い色は、背景が薄暗いときに果物の読みやすさに影響を与える。
+- <!-- **Avoid using combo colours with ~220 luminosity or higher.** --> **明度が220異常のコンボカラーは使わない。** Kiai timeのときに目に不快さを与える。
 - **Avoid replacing the hit finish in soft/normal samplesets with frequently used custom hit sound samples.** This can sound obnoxious for anyone disabling beatmap hit sounds. Replacing hit whistles/claps is recommended because those samples are used more often.
 
-### Skinning
+<!-- ### Skinning --> ### スキン
 
 #### Rules
 
@@ -77,7 +84,8 @@ Overall rules and guidelines apply to every kind of osu!catch difficulty.
 Difficulty-specific
 --------------------
 
-Difficulty-specific rules and guidelines do only apply to the difficulty level they are listed for and therefore do *not apply to **every** osu!catch difficulty*.
+これらのルールは、個別の難易度に適用されるものであり、***すべての**難易度に適用されるものではない。*
+<!-- Difficulty-specific rules and guidelines do only apply to the difficulty level they are listed for and therefore do *not apply to **every** osu!catch difficulty*. -->
 
 ### ![Easy icon](/wiki/shared/diff/easy-c.png "Easy icon") Cup
 
