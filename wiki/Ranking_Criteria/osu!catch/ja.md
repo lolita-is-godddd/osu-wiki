@@ -6,7 +6,8 @@ The **osu!catch Ranking Criteria** はいくつかのルールとガイドライ
 Glossary
 ---------
 
-These terms are frequently appearing when getting in touch with osu!catch difficulties and are also used within the Ranking Criteria.
+<!-- These terms are frequently appearing when getting in touch with osu!catch difficulties and are also used within the Ranking Criteria. -->
+これらはosu!catchの難易度やRanking要項に関わる上でよく出現する単語である。
 
 ### <!-- Difficulty Names --> 難易度の名称
 
@@ -30,10 +31,11 @@ These terms are frequently appearing when getting in touch with osu!catch diffic
 - **Basic dash/hyperdash:** DashやHyperdashは難易度毎に定められた間隔を置かなければならない。例として、Platterでは2つのものの間に250ms (訳注: 0.25秒)の間を開けなければならない。<!-- Any dash or hyperdash whose time between fruits is at least twice the time required to allow dashes or hyperdashes, respectively. As an example, a hyperdash between objects separated by 250 ms in a Platter classifies as a basic hyperdash. -->
 - **Higher snapped dash/hyperdash:** 難易度毎に定められた間隔が置かれていないDashやHyperdash。例として、難易度毎に定められた間隔よりも短い間隔のダッシュ。<!-- Any dash or hyperdash that doesn’t meet the requirement to be a basic one, i.e. the time between the objects is less than the threshold to be classified as basic. -->
 - **Walk:** Dashを使わないで取ることのできる2つのもの。<!-- Any distance between two objects where no dash is needed to catch both. -->
-
+- **ms:** ミリセカンド。1/1000秒のこと。
 ------------------------------------------------------------------------
 
-<!-- Overall --> 共通
+<!-- Overall -->
+共通
 -----------
 
 <!-- Overall rules and guidelines apply to every kind of osu!catch difficulty. -->
@@ -54,34 +56,42 @@ These terms are frequently appearing when getting in touch with osu!catch diffic
 - **Each map must use at least two different combo colours which must not blend in with the map's background/storyboard/video.** This is so hit objects are always visible to the player.
 - **Do not use keysounds without hitnormal support.** If sounds blend perfectly with the song, feedback for hitting notes is minimal.
 -->
-<!-- #### Guidelines --> #### ガイドライン
+<!-- #### Guidelines -->
+#### ガイドライン
 
-- <!-- **Ensure combos do not reach unreasonable lengths.** --> **意味もなく長いコンボを作らないこと。** Caught fruits will stack up on the plate and can potentially obstruct the player's view. Bear in mind that slider tails, repeats and spinner bananas also count as "fruits". New Combos should be placed regularly to clear the plate and avoid this.
-- <!-- **Try to have at least one spinner in each difficulty to create variety in the map and fluctuation among scores.** --> **スコアに差をつけるため、最低一つはスピナーを入れることを試す。** <!-- However, if a spinner just doesn't fit anywhere in the song, then there's no need to force one. --> しかし、曲のどこにも収まらない場合は入れる必要がない。
-- <!-- **Overall Difficulty should have the same value as the Approach Rate.** --> Overall Diffculty (OD)はApproach Rate (AR)と同じにすることが望ましい。This is just a standardized value, as Overall Difficulty does not affect gameplay nor the amount of fruits a spinner has, just the maximum score of a difficulty. For cases where the two values are not equal, the Overall Difficulty must be less than or equal to the Overall Difficulty of the next hardest difficulty.
-- **Use the same slider tick rate on every difficulty** as it is a property of the music rather than the mapping. However, lower difficulties may use lower tick rates to reduce accuracy requirements for newer players, providing they still follow the rhythm of the song. Using high tick rates purely to increase score/combo/difficulty is senseless.
+<!-- **Ensure combos do not reach unreasonable lengths.** --> 
+- **意味もなく長いコンボを作らないこと。** Caught fruits will stack up on the plate and can potentially obstruct the player's view. Bear in mind that slider tails, repeats and spinner bananas also count as "fruits". New Combos should be placed regularly to clear the plate and avoid this.
+<!-- **Try to have at least one spinner in each difficulty to create variety in the map and fluctuation among scores.** --> 
+- **スコアに差をつけるため、最低一つはスピナーを入れることを試す。** <!-- However, if a spinner just doesn't fit anywhere in the song, then there's no need to force one. --> しかし、曲のどこにも収まらない場合は入れる必要がない。
+<!-- **Overall Difficulty should have the same value as the Approach Rate.** -->
+- **Overall Diffculty (OD)はApproach Rate (AR)と同じにすることが望ましい。**This is just a standardized value, as Overall Difficulty does not affect gameplay nor the amount of fruits a spinner has, just the maximum score of a difficulty. For cases where the two values are not equal, the Overall Difficulty must be less than or equal to the Overall Difficulty of the next hardest difficulty.
+<!-- **Use the same slider tick rate on every difficulty** -->
+- **Slider tickはすべての難易度で同じにする。** as it is a property of the music rather than the mapping. However, lower difficulties may use lower tick rates to reduce accuracy requirements for newer players, providing they still follow the rhythm of the song. Using high tick rates purely to increase score/combo/difficulty is senseless.
 - **Dashes and hyperdashes should not be used when the destination of the hyperjump is located near the left or right border of the play field.** This creates an uncomfortable movement as the catcher is forcibly stopped upon reaching the border of the playfield. Try to leave at least 16 osupixels of space between the end point of the hyperjump and the border of the play field, respectively at x:16 or x:496 at most.
 - **Sliderends of extended sliders should be snapped according to the song's beat structure.** If the song is using a straight beat, 1/4, 1/8, and 1/16 should be used. If the song is using a swing beat, 1/6 or 1/12 should be used. If the song has a sound in a different snap from what was recommended, snapping to an actual beat always takes priority.
 - **Slider tick rate should be set according to the song.** For example if your song only uses 1/3 snapping, using tick rate 2 or 4 would not be fitting.
-- <!-- **Avoid using combo colours with ~50 luminosity or lower.** --> **明度が50以下のコンボカラーは使わない。** 暗い色は、背景が薄暗いときに果物の読みやすさに影響を与える。
-- <!-- **Avoid using combo colours with ~220 luminosity or higher.** --> **明度が220異常のコンボカラーは使わない。** Kiai timeのときに目に不快さを与える。
+<!-- **Avoid using combo colours with ~50 luminosity or lower.** --> 
+- **明度が50以下のコンボカラーは使わない。** 暗い色は、背景が薄暗いときに果物の読みやすさに影響を与える。
+<!-- **Avoid using combo colours with ~220 luminosity or higher.** -->
+- **明度が220異常のコンボカラーは使わない。** Kiai timeのときに目に不快さを与える。
 - **Avoid replacing the hit finish in soft/normal samplesets with frequently used custom hit sound samples.** This can sound obnoxious for anyone disabling beatmap hit sounds. Replacing hit whistles/claps is recommended because those samples are used more often.
 
-<!-- ### Skinning --> ### スキン
-
-#### Rules
+<!-- ### Skinning -->
+### スキン
+#### ルール
 
 - **Custom catchers must be included in v2 skin format.** This is to ensure correct display on all skins. The required filenames are `fruit-catcher-idle.png`, `fruit-catcher-kiai.png` and `fruit-catcher-fail.png`.
 - **Custom fruits must include all necessary elements and be coloured in a scale of grey colours.** This is to ensure that your images are clearly defined and of acceptable quality. The needed elements can be found at [Skinning/osu!catch](/wiki/Skinning/osu!catch). Additionally, it is recommendable to use transparent elements for the overlays.
 - **Skinned elements must be the same size as their default skin counterparts.** This is so they represent the hitbox properly and don't alter gameplay. The current dimensions used in the default skin are 128x128 pixels for the fruits, 82x103 for the drops and 306x320 for the catcher.
 
-#### Guidelines
+#### ガイドライン
 
 - **Custom catchers should additionally include the element `lighting.png` to complete the skin set.** This element is however optional to add and has default dimensions of 184x184 pixels, though it may vary depending on the desired visibility of the element.
 
 ------------------------------------------------------------------------
 
-Difficulty-specific
+<!-- Difficulty-specific -->
+難易度別
 --------------------
 
 これらのルールは、個別の難易度に適用されるものであり、***すべての**難易度に適用されるものではない。*
@@ -89,30 +99,47 @@ Difficulty-specific
 
 ### ![Easy icon](/wiki/shared/diff/easy-c.png "Easy icon") Cup
 
-#### Rules
+#### ルール
 
+- **ダッシュ、ハイパーダッシュは許可されていない。** これは初心者にとって簡単な体験を提供するためである。つまりテストのときには、ダッシュをすることなく、SSランクを取ることができなければならない。
+- **250ms以上オブジェクトの間を開けること。** 例として、1/3拍子では80BPMまでで、1/2拍子では120BPMが許可される。
+<!--
 - **Dashes and hyperdashes of any kind are disallowed.** This is to ensure an easy starting experience to beginner players. In order to test that out, it must be possible to achieve an SS rank on the difficulty without making use of the dash key.
 - **At least 250 ms must be left between objects and the start and end of spinners to ensure readability.** As an example, a 1/3 gap would be required at 80 bpm, whereas a 1/2 gap would be required at 120 BPM.
-
+-->
 #### Guidelines
 
+<!--
 - Combos should not exceed 8 objects including slider tails and repeats. Spinners are an exception.
 - Note density should follow a mostly 1/1 pattern - 1/2 and/or 1/3 patterns can be used sparingly
 - Approach Rate / Overall Difficulty should be between 4-6
 - HP drain should be 4 or less
 - Circle Size should be between 2-3
+-->
 
+- スピナーを除き、コンボは8つ以内に収めることが望ましい。これにはスライダーの始点・終点・折返しも含まれる。
+- 1/1のリズムであることが望ましい - 1/2 や 1/3 は局所的に使うことができる
+- Approach Rate と Overall Difficulty はそれぞれ4から6の間にあるべき
+- HP drain は4以下であるべき
+- Circle Size は2から3であるべき
 ### ![Normal icon](/wiki/shared/diff/normal-c.png "Normal icon") Salad
 
-#### Rules
+#### ルール
 
+- **ハイパーダッシュは許可されていない。** これは段階を踏んでステップアップする体験を提供するためである。
+- **Dashは125ms以上の間隔を開けなければならない。** 例として、1/3拍子でのダッシュは160BPM以下で許可され、1/4拍子でのダッシュは120BPM以下で許可される。
+- **Edge dashは使うことができない** 上級者でなければ安定してタイミングが取れないためである。
+- **Basic dashは2回以上連続して使うことができない。If higher snapped dashes are used, they must be used singularly (not in conjunction with other dashes).** 
+- **Higher snapped dashes of different beat snap must not be used between consecutive fruits.**
+- **250ms以上オブジェクトの間を開けること。** 例として、1/3拍子では80BPMまでで、1/2拍子では120BPMが許可される。
+<!--
 - **Hyperdashes of any kind are disallowed.** This is to ensure a manageable step in difficulty for novice players.
 - **Dashes may be used if the time between the ticks of the desired snapping is 125ms or higher.** As an example, 1/3 dashes would be allowed at 160 BPM and below, whereas 1/4 dashes would be allowed at 120 BPM and below.
 - **Edge dashes must not be used** as they require extremely precise timing which cannot be expected of less-experienced players.
 - **Basic dashes can't be used more than two times between consecutive fruits. If higher snapped dashes are used, they must be used singularly (not in conjunction with other dashes).**
 - **Higher snapped dashes of different beat snap must not be used between consecutive fruits.**
 - **At least 250 ms must be left between objects and the start and end of spinners to ensure readability.** As an example, a 1/3 gap would be required at 80 bpm, whereas a 1/2 gap would be required at 120 BPM.
-
+-->
 #### Guidelines
 
 - **All distances should be clear on whether they require the player to walk or dash.** This is to ensure that players can easily recognize patterns that require dashing.
